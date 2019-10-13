@@ -96,12 +96,13 @@ VantComponent({
       context.setLineCap(lineCap);
       context.beginPath();
       context.arc(position, position, radius, beginAngle, endAngle, !clockwise);
-      context.stroke();
 
       if (fill) {
         context.setFillStyle(fill);
         context.fill();
       }
+
+      context.stroke();
     },
 
     renderLayerCircle(context) {
